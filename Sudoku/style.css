@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    transition:all 0.5s ease;
+}
+
+body{
+    background-color: #56baed;
+}
+
+h1, h2{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.play-board{
+    position:absolute;
+    margin: 20px 0px;
+    top:40%;
+    left:50%;
+    display:flex;
+    flex-direction:column;
+    transform:translate(-50%, -50%);
+    transition:all 0.5s ease;
+    width:600px;
+    height:600px;
+}
+.play-board.active{
+    opacity:1;
+}
+.play-board.hide{
+    display:none;
+}
+
+.set-options{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:600px;
+    transform:translate(-50%, -50%);
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    padding:20px 30px;
+}
+.set-options button{
+    margin: 0 10px;
+}
+.set-board.hide{
+    display:none;
+}
+
+.start-button{
+    position:absolute;
+    background-color:white;
+    width:300px;
+    border-radius: 20px;
+    padding:10px 50px;
+    top:90%;
+    left:50%;
+    transform:translateX(-50%);
+}
+.start-button.hide{
+    display:none;
+}
+.start-button.active{
+    opacity: 1;
+}
+
+.options, .reset-option{
+    /* margin:10px; */
+    display:flex;
+    background-color:white;
+    /* border:1px solid white; */
+    border-radius: 10px;
+    justify-content:space-around;
+    padding:10px;
+    margin:20px 0px;
+}
+.options.hide{
+    display:none;
+}
+.options.active{
+    opacity: 1;
+}
+
+.options button,
+.set-options button,
+.start-button button,
+.reset-option button{
+    width: 200px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 8px 0;
+    border:none;
+    border-radius:20px;
+    background-color: #56baed;
+    color:#fff;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+
+.options button:hover,
+.set-options button:hover,
+.start-button button:hover,
+.reset-option button:hover{
+    transform:scale(1.40);
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    transition: all 0.7s ease;
+}
+
+.play-board section{
+    display: flex;
+    position: relative;
+}
+
+span{
+    border:1px solid black;
+    width:70px;
+    height:60px;
+    background-color:white;
+    color:#56baed;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15px;
+}
+span:hover{
+    /* transform:scale(0.90); */
+    transform:scale(1.10);
+}
+
