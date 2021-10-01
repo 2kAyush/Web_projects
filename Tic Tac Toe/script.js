@@ -254,8 +254,8 @@ function player2Turn(element){
         element.setAttribute('id', playerSign);
     }
     turn = 1;
+    selectWinner();
     playerSign = "X";
-    selectWinner();    
     element.style.pointerEvents = "none";
 }
 
